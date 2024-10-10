@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.start-screen {
+  position: relative;
+  background-image: url('../src/assets/Intro/Background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-screen {
+  position: relative;
+  background-image: url('../src/assets/SectionA/Background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.quiz-screen {
+  width: 100%;
+  background-image: url('../src/assets/QuestionAnswerSection/Background.webp');
+  min-height: 100vh; /* Ensures it takes the full viewport height */
+  height: auto;      /* Allows it to grow with the content */
+  background-attachment: fixed;
+  background-size: cover; /* Ensures the background covers the whole area */
+  background-position: center; /* Center the background image */
+}
+
+
+.annual-hse {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 10;
+  height: auto;
+  width: 200px;
+}
+
+.section-logo {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 10;
+  height: auto;
+  width: 250px;
+}
+
+.interactive-quiz {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: auto;
+  width: 150px;
+}
+
+.oqgn-logo {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  height: auto;
+  width: 150px;
+}
+
+.start-button img {
+  width: 150px;
+  /* Adjust the width of the start button image */
+}
