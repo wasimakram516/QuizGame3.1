@@ -3,9 +3,9 @@ const quizDataSection1 = [
   {
     question: 'What is the first step in hazard identification?',
     options: [
-      { text: 'A: Evaluate the severity of the hazard', isCorrect: true },  // Correct Answer
+      { text: 'A: Evaluate the severity of the hazard', isCorrect: false },  
       { text: 'B: Report the hazard', isCorrect: false },
-      { text: 'C: Identify potential hazards in the workplace', isCorrect: false },
+      { text: 'C: Identify potential hazards in the workplace', isCorrect: true },// Correct Answer
       { text: 'D: Eliminate the hazard', isCorrect: false },
     ],
   },
@@ -66,8 +66,8 @@ const quizDataSection1 = [
   {
     question: 'Why is hazard identification important?',
     options: [
-      { text: 'A: To improve employee morale', isCorrect: true },  // Correct Answer
-      { text: 'B: To prevent accidents and injuries', isCorrect: false },
+      { text: 'A: To improve employee morale', isCorrect: false }, 
+      { text: 'B: To prevent accidents and injuries', isCorrect: true }, // Correct Answer
       { text: 'C: To increase company profits', isCorrect: false },
       { text: 'D: To ensure compliance with financial regulations', isCorrect: false },
     ],
@@ -75,18 +75,18 @@ const quizDataSection1 = [
   {
     question: 'What is the difference between a hazard and a risk?',
     options: [
-      { text: 'A: A hazard is a potential source of harm, and a risk is the likelihood of harm occurring', isCorrect: false },
+      { text: 'A: A hazard is a potential source of harm, and a risk is the likelihood of harm occurring', isCorrect: true }, // Correct Answer
       { text: 'B: A hazard is an injury, and a risk is the cause of that injury', isCorrect: false },
       { text: 'C: A hazard is a tool, and a risk is how it is used', isCorrect: false },
-      { text: 'D: There is no difference', isCorrect: true },  // Correct Answer
+      { text: 'D: There is no difference', isCorrect: false }, 
     ],
   },
   {
     question: 'Which of the following is an ergonomic hazard?',
     options: [
-      { text: 'A: Repetitive motion leading to injury', isCorrect: false },
+      { text: 'A: Repetitive motion leading to injury', isCorrect: false }, // Correct Answer
       { text: 'B: Exposure to toxic fumes', isCorrect: false },
-      { text: 'C: Operating heavy machinery', isCorrect: true },  // Correct Answer
+      { text: 'C: Operating heavy machinery', isCorrect: false }, 
       { text: 'D: Poor emergency exits', isCorrect: false },
     ],
   },

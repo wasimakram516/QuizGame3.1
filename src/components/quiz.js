@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, Grid, Button } from "@mui/material";
+import { Box, Typography, Grid, Button, useTheme } from "@mui/material";
 import OptionButton from "./OptionButton";
 import FeedbackModal from "./FeedbackModal";
 import correctImage from "../assets/QuestionAnswerSection/CorrectAnswer.webp"; // Correct feedback image
@@ -17,6 +17,7 @@ const wrongAnswerImages = {
 };
 
 function Quiz({ quizData, endGame, incrementScore, restartGame }) {
+  const theme = useTheme();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [feedback, setFeedback] = useState(null); // 'correct' or 'wrong'
   const [feedbackImage, setFeedbackImage] = useState(null); // Feedback image for the modal
@@ -93,7 +94,7 @@ function Quiz({ quizData, endGame, incrementScore, restartGame }) {
           top: "10px",
           left: "10px",
           fontSize: "16px",
-          backgroundColor: "#FF8C00", // Style as you prefer
+          backgroundColor: theme.palette.oqOrange.main, // Style as you prefer
           color: "#FFFFFF",
           padding: "10px 20px",
           borderRadius: "8px",

@@ -21,7 +21,7 @@ function FeedbackModal({ open, isCorrect, feedbackImage, handleNextQuestion }) {
     <Dialog open={open} onClose={handleNextQuestion} fullWidth maxWidth="sm">
       <DialogTitle
       sx={{
-        bgcolor: isCorrect? theme.palette.primary.main:theme.palette.error.main,
+        bgcolor: isCorrect? theme.palette.oqGreen.main:theme.palette.error.main,
         color: theme.palette.primary.contrastText,
       }}
       >
@@ -51,7 +51,14 @@ function FeedbackModal({ open, isCorrect, feedbackImage, handleNextQuestion }) {
         )}
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleNextQuestion} variant="contained" color="primary" autoFocus>
+        <Button onClick={handleNextQuestion} variant="contained" autoFocus 
+        sx={{
+          backgroundColor:"sustainableGreen.main", color:"white",
+          "&:hover": {
+              backgroundColor: "oqGreen.main", // Optional: if you want a darker green on hover
+            },
+          }}
+          >
           Next Question
         </Button>
       </DialogActions>

@@ -1,15 +1,15 @@
-import React from 'react';
-import { Box, Button, Typography, Paper } from '@mui/material';
+import React from "react";
+import { Box, Button, Typography, Paper } from "@mui/material";
 
 function ResultScreen({ score, total, restartGame }) {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh',
-        backgroundColor: '#f5f5f5',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        backgroundColor: "#f5f5f5",
         padding: 2,
       }}
     >
@@ -18,32 +18,41 @@ function ResultScreen({ score, total, restartGame }) {
         sx={{
           padding: 4,
           borderRadius: 2,
-          textAlign: 'center',
-          backgroundColor: '#ffffff',
-          boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
+          textAlign: "center",
+          backgroundColor: "#ffffff",
+          boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
         }}
       >
         <Typography
           variant="h4"
           gutterBottom
-          sx={{ fontWeight: 'bold', color: '#1976D2' }}
+          sx={{ fontWeight: "bold", color: "#1976D2" }}
         >
-          🎉 Quiz Completed!
+          Quiz Completed! <br/>🎉
         </Typography>
 
         <Typography
           variant="h6"
           gutterBottom
-          sx={{ color: '#333', marginBottom: 3 }}
+          sx={{ color: "#333", marginBottom: 3 }}
         >
-          Your Score: <strong>{score} / {total}</strong>
+          Your Score:{" "}
+          <strong>
+            {score} / {total}
+          </strong>
         </Typography>
 
         <Button
           variant="contained"
-          color="primary"
           size="large"
-          sx={{ padding: '10px 20px', borderRadius: '20px' }}
+          sx={{
+            backgroundColor: "sustainableGreen.main", // Use the theme's sustainable green color
+            color: "white", // White text
+            padding: "10px 20px",
+            "&:hover": {
+              backgroundColor: "oqGreen.main", // Optional: if you want a darker green on hover
+            },
+          }}
           onClick={restartGame}
         >
           Play Again

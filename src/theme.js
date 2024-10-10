@@ -8,14 +8,6 @@ const theme = createTheme({
     secondary: {
       main: '#FF8C00', // Bright Orange
     },
-    background: {
-      default: '#F0F0F0', // Light Gray
-      paper: '#FFFFFF', // White for card surfaces or modals
-    },
-    text: {
-      primary: '#333333', // Charcoal for primary text
-      secondary: '#757575', // Lighter gray for secondary text
-    },
     success: {
       main: '#32CD32', // Lime Green for correct answers or success
     },
@@ -24,6 +16,15 @@ const theme = createTheme({
     },
     warning: {
       main: '#FFD700', // Soft Yellow for warning or highlights
+    },
+    oqGreen:{
+      main:"#87B353" // OQGN Green
+    },
+    sustainableGreen:{
+      main:"#394E29" // Sustainable Green
+    },
+    oqOrange:{
+      main:"#F58220", // OQGN Orange
     },
   },
   components: {
@@ -47,11 +48,14 @@ const theme = createTheme({
             bottom: '20%',
             right: '10%',
             zIndex: 100,
-            backgroundColor: "#268326",
+            backgroundColor: "#394E29",
             color:"white",
             fontWeight:"bolder",
             width:"auto",
-            fontSize:"20px"
+            fontSize:"20px",
+            "&:hover": {
+              backgroundColor: "#87B353", // Optional: if you want a darker green on hover
+            },
           },
         },
         
