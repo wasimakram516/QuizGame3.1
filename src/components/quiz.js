@@ -94,7 +94,7 @@ function Quiz({ quizData, endGame, incrementScore }) {
       </Typography>
 
       {/* Display Question */}
-      <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>
+      <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
         {currentQuestion.question}
       </Typography>
 
@@ -102,12 +102,17 @@ function Quiz({ quizData, endGame, incrementScore }) {
       <Box
         sx={{
           textAlign: "left", // Left-aligns the options
-          maxWidth: "500px", // Optional: set a max width for better spacing
+          maxWidth: "500px", // Set a max width for better spacing
           marginBottom: "24px", // Adds some space between options and buttons
         }}
       >
         {currentQuestion.options.map((option, index) => (
-          <Typography key={index} variant="h6" gutterBottom>
+          <Typography
+            key={index}
+            variant="body1" // Use body text style
+            gutterBottom // Add some spacing between options
+            sx={{ marginBottom: "12px" }} // Ensure spacing between options
+          >
             {option.text}
           </Typography>
         ))}
