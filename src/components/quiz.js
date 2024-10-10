@@ -101,10 +101,11 @@ function Quiz({ quizData, endGame, incrementScore }) {
       {/* Display Answer Options */}
       <Box
         sx={{
-          textAlign: "left", // Left-aligns the options
-          maxWidth: "500px", // Set a max width for better spacing
-          marginBottom: "24px", // Adds some space between options and buttons
-        }}
+          textAlign: "left", // Aligns the text to the left
+          maxWidth: "500px", // Limits the width of the container to 500px
+          marginBottom: "24px", // Adds space below the container
+          padding: "0 20px 0 20px" // Adds horizontal padding (left and right) of 20px, no padding on top and bottom
+        }}        
       >
         {currentQuestion.options.map((option, index) => (
           <Typography
