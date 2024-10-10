@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/QuizGame/static/css/main.1a5be4d7.css",
+    "main.js": "/QuizGame/static/js/main.8384a745.js",
+    "static/js/453.af4fb0ea.chunk.js": "/QuizGame/static/js/453.af4fb0ea.chunk.js",
+    "static/media/A.webp": "/QuizGame/static/media/A.131e84be23ed8180cd8a.webp",
+    "static/media/B.webp": "/QuizGame/static/media/B.d23df996877e13260cb1.webp",
+    "static/media/C.webp": "/QuizGame/static/media/C.e6c44ada76858a1ebc77.webp",
+    "static/media/CorrectAnswer.webp": "/QuizGame/static/media/CorrectAnswer.58e491ae2f9a38f6c42c.webp",
+    "static/media/D.webp": "/QuizGame/static/media/D.9041823fe6c9641e8683.webp",
+    "static/media/IncorrectAnswerA.webp": "/QuizGame/static/media/IncorrectAnswerA.2269e9a21239bc6e9c84.webp",
+    "static/media/IncorrectAnswerC.webp": "/QuizGame/static/media/IncorrectAnswerC.d4d4095b76740e096000.webp",
+    "static/media/IncorrectAnswerB.webp": "/QuizGame/static/media/IncorrectAnswerB.e3611d24d37e98a2b9d9.webp",
+    "static/media/IncorrectAnswerD.webp": "/QuizGame/static/media/IncorrectAnswerD.62bc794d6673680bddf2.webp",
+    "static/media/START.webp": "/QuizGame/static/media/START.c51e3732e45ce56f35e6.webp",
+    "static/media/AnnualHSE.webp": "/QuizGame/static/media/AnnualHSE.a5d0efac63831b99bc22.webp",
+    "static/media/Background.webp": "/QuizGame/static/media/Background.4fae15f50daff9513d07.webp",
+    "static/media/OQGNDarkVariant.webp": "/QuizGame/static/media/OQGNDarkVariant.01cece224cfd8073641c.webp",
+    "static/media/OQGNLogo.webp": "/QuizGame/static/media/OQGNLogo.45aeea8aec7075911f7f.webp",
+    "static/media/Section3.webp": "/QuizGame/static/media/Section3.e1a77a931d66137e75dc.webp",
+    "static/media/Section4.webp": "/QuizGame/static/media/Section4.ed1a524f32e9331ac6bc.webp",
+    "static/media/Section1.webp": "/QuizGame/static/media/Section1.b425a8654ef31eb38ff5.webp",
+    "static/media/Section2.webp": "/QuizGame/static/media/Section2.981c9278f4a18dadcb32.webp",
+    "static/media/InteractiveQuiz.webp": "/QuizGame/static/media/InteractiveQuiz.0eef986ffbdc246b12f5.webp",
+    "index.html": "/QuizGame/index.html",
+    "main.1a5be4d7.css.map": "/QuizGame/static/css/main.1a5be4d7.css.map",
+    "main.8384a745.js.map": "/QuizGame/static/js/main.8384a745.js.map",
+    "453.af4fb0ea.chunk.js.map": "/QuizGame/static/js/453.af4fb0ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a5be4d7.css",
+    "static/js/main.8384a745.js"
+  ]
+}
