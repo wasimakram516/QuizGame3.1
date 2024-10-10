@@ -33,7 +33,7 @@ body {
 
 .quiz-screen {
   width: 100%;
-  background-image: url('../src/assets/QuestionAnswerSection/Background.webp');
+  background-image: url('../src/assets/QuestionAnswerSection/NewBG.webp');
   min-height: 100vh; /* Ensures it takes the full viewport height */
   height: auto;      /* Allows it to grow with the content */
   background-attachment: fixed;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Button } from "@mui/material";
 import OptionButton from "./OptionButton";
 import FeedbackModal from "./FeedbackModal";
 import correctImage from "../assets/QuestionAnswerSection/CorrectAnswer.webp"; // Correct feedback image
@@ -16,7 +16,7 @@ const wrongAnswerImages = {
   D: wrongImageD,
 };
 
-function Quiz({ quizData, endGame, incrementScore }) {
+function Quiz({ quizData, endGame, incrementScore, restartGame }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [feedback, setFeedback] = useState(null); // 'correct' or 'wrong'
   const [feedbackImage, setFeedbackImage] = useState(null); // Feedback image for the modal
@@ -82,8 +82,28 @@ function Quiz({ quizData, endGame, incrementScore }) {
         textAlign: "center",
         padding: 0,
         margin: 0,
+        position: "relative", // Ensure relative positioning for the quiz content
       }}
     >
+      {/* Restart Button - Fixed to the top-left corner */}
+      <Button
+        onClick={restartGame}  // Trigger the restart function
+        sx={{
+          position: "fixed",  // Fix the button in place even during scroll
+          top: "10px",
+          left: "10px",
+          fontSize: "16px",
+          backgroundColor: "#FF8C00", // Style as you prefer
+          color: "#FFFFFF",
+          padding: "10px 20px",
+          borderRadius: "8px",
+          fontWeight: "bold",
+          zIndex: 1000, // Ensure the button is always on top of other content
+        }}
+      >
+        Restart
+      </Button>
+
       {/* Display Question Number */}
       <Typography
         variant="h2"
@@ -104,8 +124,8 @@ function Quiz({ quizData, endGame, incrementScore }) {
           textAlign: "left", // Aligns the text to the left
           maxWidth: "500px", // Limits the width of the container to 500px
           marginBottom: "24px", // Adds space below the container
-          padding: "0 20px 0 20px" // Adds horizontal padding (left and right) of 20px, no padding on top and bottom
-        }}        
+          padding: "0 20px 0 20px", // Adds horizontal padding (left and right) of 20px, no padding on top and bottom
+        }}
       >
         {currentQuestion.options.map((option, index) => (
           <Typography
@@ -126,6 +146,7 @@ function Quiz({ quizData, endGame, incrementScore }) {
             <OptionButton
               option={option}
               handleAnswer={() => handleAnswer(option)}
+              optionLetter={["A", "B", "C", "D"][index]} // Pass A, B, C, or D based on the index
             />
           </Grid>
         ))}

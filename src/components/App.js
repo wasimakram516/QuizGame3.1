@@ -66,6 +66,7 @@ function App() {
           endGame={() => endGame('A')}
           incrementScore={() => setScore(score + 1)}
           quizData={quizDataA} // Pass Section A data
+          restartGame={restartGame}
         />
       )}
       
@@ -75,6 +76,7 @@ function App() {
           endGame={() => endGame('B')}
           incrementScore={() => setScore(score + 1)}
           quizData={quizDataB} // Pass Section B data
+          restartGame={restartGame}
         />
       )}
 
@@ -84,6 +86,7 @@ function App() {
           endGame={() => endGame('C')}
           incrementScore={() => setScore(score + 1)}
           quizData={quizDataC} // Pass Section C data
+          restartGame={restartGame}
         />
       )}
 
@@ -93,6 +96,7 @@ function App() {
           endGame={() => endGame('D')}
           incrementScore={() => setScore(score + 1)}
           quizData={quizDataD} // Pass Section D data
+          restartGame={restartGame}
         />
       )}
       
