@@ -53,9 +53,9 @@ function FeedbackModal({ open, isCorrect, feedbackImage, handleNextQuestion }) {
       <DialogActions>
         <Button onClick={handleNextQuestion} variant="contained" autoFocus 
         sx={{
-          backgroundColor:"sustainableGreen.main", color:"white",
+          backgroundColor:"primary.main", color:"white",
           "&:hover": {
-              backgroundColor: "oqGreen.main", // Optional: if you want a darker green on hover
+              backgroundColor: "primary.light", 
             },
           }}
           >

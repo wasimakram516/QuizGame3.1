@@ -3,10 +3,11 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#268326', // Royal Blue
+      main: '#394E29', // Sustainable Green
+      light:"#87B353", // OQGN Green
     },
     secondary: {
-      main: '#FF8C00', // Bright Orange
+      main: '#F58220', // OQGN Orange
     },
     success: {
       main: '#32CD32', // Lime Green for correct answers or success
@@ -16,15 +17,6 @@ const theme = createTheme({
     },
     warning: {
       main: '#FFD700', // Soft Yellow for warning or highlights
-    },
-    oqGreen:{
-      main:"#87B353" // OQGN Green
-    },
-    sustainableGreen:{
-      main:"#394E29" // Sustainable Green
-    },
-    oqOrange:{
-      main:"#F58220", // OQGN Orange
     },
   },
   components: {

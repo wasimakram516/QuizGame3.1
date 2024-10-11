@@ -94,7 +94,7 @@ function Quiz({ quizData, endGame, incrementScore, restartGame }) {
           top: "10px",
           left: "10px",
           fontSize: "16px",
-          backgroundColor: theme.palette.oqOrange.main, // Style as you prefer
+          backgroundColor: theme.palette.secondary.main, // Style as you prefer
           color: "#FFFFFF",
           padding: "10px 20px",
           borderRadius: "8px",

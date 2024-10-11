@@ -46,11 +46,11 @@ function ResultScreen({ score, total, restartGame }) {
           variant="contained"
           size="large"
           sx={{
-            backgroundColor: "sustainableGreen.main", // Use the theme's sustainable green color
+            backgroundColor: "primary.main", // Use the theme's sustainable green color
             color: "white", // White text
             padding: "10px 20px",
             "&:hover": {
-              backgroundColor: "oqGreen.main", // Optional: if you want a darker green on hover
+              backgroundColor: "primary.light", // Use the theme's OQGN green color
             },
           }}
           onClick={restartGame}
