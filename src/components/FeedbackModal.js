@@ -21,7 +21,7 @@ function FeedbackModal({ open, isCorrect, feedbackImage, handleNextQuestion }) {
     <Dialog open={open} onClose={handleNextQuestion} fullWidth maxWidth="sm">
       <DialogTitle
       sx={{
-        bgcolor: isCorrect? theme.palette.oqGreen.main:theme.palette.error.main,
+        bgcolor: isCorrect? theme.palette.primary.main:theme.palette.error.main,
         color: theme.palette.primary.contrastText,
       }}
       >
