@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/QuizGame/static/css/main.8a017484.css",
+    "main.css": "/QuizGame/static/css/main.50f99eff.css",
     "main.js": "/QuizGame/static/js/main.f5722143.js",
     "static/js/453.af4fb0ea.chunk.js": "/QuizGame/static/js/453.af4fb0ea.chunk.js",
     "static/media/CorrectAnswer.webp": "/QuizGame/static/media/CorrectAnswer.6111eaba3ac227ab8f40.webp",
@@ -20,12 +20,12 @@
     "static/media/InteractiveQuiz.webp": "/QuizGame/static/media/InteractiveQuiz.6576a091558072b5e2cf.webp",
     "static/media/AnnualHSE.webp": "/QuizGame/static/media/AnnualHSE.0a3b74bcb89893c18af8.webp",
     "index.html": "/QuizGame/index.html",
-    "main.8a017484.css.map": "/QuizGame/static/css/main.8a017484.css.map",
+    "main.50f99eff.css.map": "/QuizGame/static/css/main.50f99eff.css.map",
     "main.f5722143.js.map": "/QuizGame/static/js/main.f5722143.js.map",
     "453.af4fb0ea.chunk.js.map": "/QuizGame/static/js/453.af4fb0ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a017484.css",
+    "static/css/main.50f99eff.css",
     "static/js/main.f5722143.js"
   ]
 }
