@@ -67,9 +67,10 @@ const quizDataSection1 = [
   {
     question: 'What is the first step in hazard identification?',
     options: [
-      { text: 'A: Evaluate the severity of the hazard', image: OptionA, isCorrect: true }, // Correct Option
-      { text: 'B: Report the hazard', image: OptionB, isCorrect: false },
-      // Add more options here
+      { text: 'A: Evaluate the severity of the hazard', isCorrect: false },
+      { text: 'B: Report the hazard', isCorrect: false },
+      { text: 'C: Identify potential hazards in the workplace', isCorrect: true },  // Correct Answer
+      { text: 'D: Eliminate the hazard', isCorrect: false },
     ],
   },
   // Add more questions here
